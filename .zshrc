@@ -102,10 +102,12 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "\e[A" history-beginning-search-backward-end
 bindkey "\e[B" history-beginning-search-forward-end
 
+# pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# cowsay
 say_or_think=(cowsay cowthink)
 say_or_think=`echo $say_or_think[(($RANDOM % ${#say_or_think[@]}))+1]`
 eyes=(-b -d -y)
