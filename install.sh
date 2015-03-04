@@ -2,10 +2,10 @@
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew update >/dev/null 2>&1
-brew install htop unrar tree ctags ssh-copy-id wget coreutils git-flow vim ffmpeg
+brew update &>/dev/null
+brew install htop unrar tree ctags ssh-copy-id wget coreutils git-flow vim ffmpeg figlet
 
-sudo gem update --system >/dev/null 2>&1
+sudo gem update --system &>/dev/null
 sudo gem install lolcat
 
 easy_install pip
