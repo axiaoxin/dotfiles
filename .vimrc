@@ -1,3 +1,5 @@
+set nocompatible
+
 "取消备份
 set nobackup
 set noswapfile
