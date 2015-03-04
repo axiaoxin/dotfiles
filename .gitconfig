@@ -1,0 +1,12 @@
+[user]
+	name = axiaoxin
+	email = 254606826@qq.com
+[push]
+	default = simple
+[core]
+	editor = vim
+	autocrlf = input
+[color]
+	ui = true
+[color "diff"]
+	meta = yellow black bold
