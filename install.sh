@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "=> chown /usr/local"
+sudo chown -R `whoami` /usr/local
 
 echo "=> install homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" &>/dev/null
