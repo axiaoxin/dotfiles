@@ -17,6 +17,9 @@ sudo pip install ipython jedi virtualenv virtualenvwrapper pyflakes pylint autop
 echo "=> install omyzsh"
 curl -L http://install.ohmyz.sh | sh
 
+echo "=> close .DS_Store"
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+
 echo "=> make softlinks"
 
 if [ -d ~/.pip ]; then
