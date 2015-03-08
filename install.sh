@@ -11,6 +11,7 @@ sudo gem update --system &>/dev/null
 echo "=> install bins"
 brew install htop npm unrar tree ctags ssh-copy-id wget coreutils git-flow vim ffmpeg figlet gist &>/dev/null
 sudo gem install lolcat &>/dev/null
+sudo npm install -g bower &>/dev/null
 
 echo "=> install python modules"
 sudo easy_install pip &>/dev/null
