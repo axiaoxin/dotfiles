@@ -11,6 +11,7 @@ ZSH_THEME="juanghurtado"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi=vim
+alias kat="pygmentize -O encoding=UTF-8 -g"
 # Copy my public key to the pasteboard
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | printf '=> Public key copied to pasteboard.\n'"
 # Empty the Trash on all mounted volumes and the main HDD
