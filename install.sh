@@ -15,7 +15,7 @@ sudo npm install -g bower &>/dev/null
 
 echo "=> install python modules"
 sudo easy_install pip &>/dev/null
-sudo pip install ipython jedi virtualenv virtualenvwrapper pyflakes pylint autopep8 shadowsocks  gevent pyperclip pbkdf2 Pygments pythonpy unp simpletornadoserver &>/dev/null
+sudo pip install ipython jedi virtualenv virtualenvwrapper pyflakes pylint autopep8 shadowsocks  gevent pyperclip pbkdf2 Pygments pythonpy unp simpletornadoserver jsonschema mistune &>/dev/null
 
 echo "=> install omyzsh"
 curl -L http://install.ohmyz.sh | sh
