@@ -120,6 +120,9 @@ nmap <silent> <F3> :NERDTreeToggle<CR>
 
 "F4显示TagList
 nmap <silent> <F4> :TlistToggle<CR>
+let Tlist_Show_One_File = 1            "不同时显示多个文件的tag，只显示当前文件的
+let Tlist_Exit_OnlyWindow = 1          "如果taglist窗口是最后一个窗口，则退出vim
+let Tlist_Use_Right_Window = 1         "在右侧窗口中显示taglist窗口
 
 "F5运行脚本，F6编译脚本
 autocmd BufRead *.py set makeprg=python\ -c\ \"import\ py_compile,sys;\ sys.stderr=sys.stdout;\ py_compile.compile(r'%')\"
