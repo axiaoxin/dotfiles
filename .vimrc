@@ -124,6 +124,7 @@ nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
 "下载NERDTree: http://www.vim.org/scripts/script.php?script_id=1658
 "解压缩之后，把 plugin/NERD_tree.vim和doc/NERD_tree.txt分别拷贝到~/.vim/plugin 和 ~/.vim/doc 目录。
 nmap <silent> <F3> :NERDTreeToggle<CR>
+let NERDTreeIgnore=['\.pyc$']  "不显示pyc文件
 
 "F4显示TagList
 nmap <silent> <F4> :TlistToggle<CR>
