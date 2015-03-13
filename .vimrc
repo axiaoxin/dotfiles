@@ -45,11 +45,11 @@ autocmd! bufwritepost .vimrc source %
 "文件修改之后自动载入
 set autoread
 
-"Ctrl+a全选并复杂到系统剪贴板，必须装有vim-gnome
-map <C-a> gg"+yG
+"normal模式下Ctrl+c全选并复杂到系统剪贴板，必须装有vim-gnome
+nmap <C-c> gg"+yG
 
-"Ctrl+c复制到剪贴板
-map <C-c> "+y
+"visual模式下Ctrl+c复制选中内容到剪贴板
+vmap <C-c> "+y
 
 "yy直接复制到系统剪切板（For macvim）
 "set clipboard=unnamed
