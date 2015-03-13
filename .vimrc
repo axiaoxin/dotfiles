@@ -132,11 +132,15 @@ let Tlist_Show_One_File = 1            "不同时显示多个文件的tag，只�
 let Tlist_Exit_OnlyWindow = 1          "如果taglist窗口是最后一个窗口，则退出vim
 let Tlist_Use_Right_Window = 1         "在右侧窗口中显示taglist窗口
 
-"F5运行脚本，F6编译脚本
+"F5运行脚本
+autocmd BufRead *.py nmap <F5> :!python %<CR>
+autocmd BufNewFile *.py nmap <F5> :!python %<CR>
+
+"F6编译脚本
 autocmd BufRead *.py set makeprg=python\ -c\ \"import\ py_compile,sys;\ sys.stderr=sys.stdout;\ py_compile.compile(r'%')\"
 autocmd BufRead *.py set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
-autocmd BufRead *.py nmap <F5> :!python %<CR>
 autocmd BufRead *.py nmap <F6> :make<CR>
+autocmd BufNewFile *.py nmap <F6> :make<CR>
 
 "拷贝粘贴代码不破坏缩进，拷贝前按F7，结束再按F7
 set pastetoggle=<F7>
