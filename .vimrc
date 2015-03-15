@@ -117,6 +117,9 @@ set fdm=indent
 "默认展开
 set foldlevel=99
 
+"W写入只读文件
+cmap W w !sudo tee >/dev/null %
+
 "F2切换行号显示
 nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
 
@@ -235,3 +238,4 @@ silent! if emoji#available()
   let g:gitgutter_sign_modified_removed = emoji#for('collision')
 endif
 set completefunc=emoji#complete
+
