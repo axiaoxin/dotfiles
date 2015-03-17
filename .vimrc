@@ -20,11 +20,6 @@ language messages zh_CN.utf-8
 
 " 状态栏配置
 set laststatus=2
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_auto_loc_list=1
-let g:syntastic_loc_list_height=5
 
 " 开启tabline
 let g:airline#extensions#tabline#enabled = 1
@@ -34,6 +29,7 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 " tabline中buffer显示编号
 let g:airline#extensions#tabline#buffer_nr_show = 1
+
 
 " 映射切换buffer的键位
 nnoremap [b :bp<CR>
@@ -173,6 +169,12 @@ vmap <s-tab> <gv
 "左右分割窗口Ctrl+w  +v
 "上下分割窗口Ctrl+w
 "关闭窗口Ctrl+w  +q
+
+"quicker window switching
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 "打开语法高亮
 syntax enable
