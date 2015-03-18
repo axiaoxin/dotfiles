@@ -91,15 +91,6 @@ export LANG=zh_CN.UTF-8
 # virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
 
-# history search
-autoload -U history-search-end
-
-zle -N history-beginning-search-backward-end history-search-end
-zle -N history-beginning-search-forward-end history-search-end
-
-bindkey "\e[A" history-beginning-search-backward-end
-bindkey "\e[B" history-beginning-search-forward-end
-
 # pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
@@ -112,3 +103,6 @@ eyes=(-b -d -y)
 eye=`echo $eyes[(($RANDOM % ${#eyes[@]}))+1]`
 cowfile=`cowsay -l| sed '1d;' | tr ' ' '\n'| gshuf -n 1`
 fortune | $say_or_think -f $cowfile $eye | lolcat -a -s 150 -p 1.5 -F 1 -d 10 -f;
+
+# history search
+source ~/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zsh
