@@ -62,7 +62,7 @@ alias pyserver="python -m SimpleTornadoServer"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,6 +103,3 @@ eyes=(-b -d -y)
 eye=`echo $eyes[(($RANDOM % ${#eyes[@]}))+1]`
 cowfile=`cowsay -l| sed '1d;' | tr ' ' '\n'| gshuf -n 1`
 fortune | $say_or_think -f $cowfile $eye | lolcat -a -s 150 -p 1.5 -F 1 -d 10 -f;
-
-# history search
-source ~/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zsh
