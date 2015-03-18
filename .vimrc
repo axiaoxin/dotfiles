@@ -241,3 +241,10 @@ silent! if emoji#available()
 endif
 set completefunc=emoji#complete
 
+" 打开文件时始终跳转到上次光标所在位置
+autocmd BufReadPost *
+      \ if ! exists("g:leave_my_cursor_position_alone") |
+      \     if line("'\"") > 0 && line ("'\"") <= line("$") |
+      \         exe "normal g'\"" |
+      \     endif |
+      \ endif
