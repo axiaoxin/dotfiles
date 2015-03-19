@@ -9,7 +9,7 @@ echo "=> homebrew update"
 brew update &>/dev/null
 sudo gem update --system &>/dev/null
 echo "=> install bins"
-brew install htop npm unrar tree ctags ssh-copy-id wget coreutils git-flow vim ffmpeg figlet gist &>/dev/null
+brew install htop npm unrar tree ctags ssh-copy-id wget coreutils vim ffmpeg figlet gist &>/dev/null
 sudo gem install lolcat &>/dev/null
 sudo npm install -g bower &>/dev/null
 
