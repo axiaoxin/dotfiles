@@ -240,6 +240,8 @@ silent! if emoji#available()
   let g:gitgutter_sign_modified_removed = emoji#for('collision')
 endif
 set completefunc=emoji#complete
+" 在:后按Ctrl-e进行emoj预览补全
+imap <C-e> <C-X><C-U>
 
 " 打开文件时始终跳转到上次光标所在位置
 autocmd BufReadPost *
