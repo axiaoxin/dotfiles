@@ -15,6 +15,9 @@ sudo npm install -g bower &>/dev/null
 
 echo "=> install python modules"
 sudo easy_install pip &>/dev/null
+
+#pip for vim
+sudo pip install isort
 sudo pip install ipython jedi virtualenv virtualenvwrapper pyflakes pylint autopep8 shadowsocks  gevent pyperclip pbkdf2 Pygments pythonpy unp simpletornadoserver jsonschema mistune bumpversion &>/dev/null
 
 echo "=> install omyzsh"
