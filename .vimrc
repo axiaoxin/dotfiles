@@ -229,7 +229,7 @@ nnoremap <C-l> <C-w>l
 " 不显示的文件
 let NERDTreeIgnore=['\.pyc$', '\~$']
 " show nerdtree when starts up
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 " 退出最后一个buff时也退出nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
