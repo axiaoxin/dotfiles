@@ -19,6 +19,9 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
+Plugin 'fisadev/vim-isort'
 
 call vundle#end()
 
@@ -223,10 +226,24 @@ nnoremap <C-l> <C-w>l
 """"""""""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""""""""
 
 " NERDTREE
-
 " 不显示的文件
 let NERDTreeIgnore=['\.pyc$', '\~$']
 " show nerdtree when starts up
 autocmd vimenter * NERDTree
 " 退出最后一个buff时也退出nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers = ['pylint', 'flake8']
+
+" vim-isort
+let g:vim_isort_map = '<C-i>'
