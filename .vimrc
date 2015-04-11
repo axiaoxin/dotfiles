@@ -22,6 +22,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'fisadev/vim-isort'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 
@@ -244,6 +245,3 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['pylint', 'flake8']
-
-" vim-isort
-let g:vim_isort_map = '<C-i>'
