@@ -184,7 +184,7 @@ nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
 nmap <silent> <F3> :NERDTreeToggle<CR>
 
 " F4显示TagList
-nmap <silent> <F4> :TlistToggle<CR>
+nmap <silent> <F4> :TagbarToggle<CR>
 
 " F5运行脚本
 autocmd BufRead,BufNewFile *.py nmap <F5> :!python %<CR>
