@@ -23,6 +23,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'fisadev/vim-isort'
 Plugin 'majutsushi/tagbar'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 
@@ -245,3 +246,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['pylint', 'flake8']
+
+" CtrlP
+" 显示隐藏文件
+let g:ctrlp_show_hidden = 1
