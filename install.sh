@@ -8,17 +8,20 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 echo "=> homebrew update"
 brew update &>/dev/null
 sudo gem update --system &>/dev/null
+
 echo "=> install bins"
-brew install git htop npm unrar tree ctags ssh-copy-id wget coreutils vim ffmpeg figlet gist &>/dev/null
+brew install vim --with-lua
+brew install git htop npm unrar tree ssh-copy-id wget coreutils ffmpeg figlet gist ctags &>/dev/null
 sudo gem install lolcat &>/dev/null
 sudo npm install -g bower &>/dev/null
+#npm for vim
+sudo npm -g install instant-markdown-d
 
 echo "=> install python modules"
 sudo easy_install pip &>/dev/null
-
+sudo pip install ipython virtualenvwrapper Pygments pythonpy unp simpletornadoserver &>/dev/null
 #pip for vim
-sudo pip install isort
-sudo pip install ipython jedi virtualenv virtualenvwrapper pyflakes pylint autopep8 shadowsocks  gevent pyperclip pbkdf2 Pygments pythonpy unp simpletornadoserver jsonschema mistune bumpversion &>/dev/null
+sudo pip install isort, jedi, autopep8, flake8
 
 echo "=> install omyzsh"
 curl -L http://install.ohmyz.sh | sh
