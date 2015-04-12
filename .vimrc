@@ -36,7 +36,6 @@ Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
-Plugin 'fisadev/vim-isort'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 
@@ -220,7 +219,7 @@ autocmd BufRead,BufNewFile *.py nmap <F6> :make<CR>
 set pastetoggle=<F7>
 
 " <F8> sort import and auto pep8
-autocmd FileType python map <buffer> <F8> :Isort<CR>:!yapf -i %<CR><CR>
+autocmd FileType python map <buffer> <F8> :!isort %; yapf -i %<CR><CR>
 
 " <F9> indent guides toggle
 map <F9> <ESC><Leader>ig
