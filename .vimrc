@@ -18,11 +18,26 @@ Plugin 'gmarik/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+
+Plugin 'scrooloose/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'axiaoxin/vim-json-line-format'
+Plugin 'tpope/vim-fugitive'
+Plugin 'junegunn/vim-emoji'
+Plugin 'mhinz/vim-startify'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'suan/vim-instant-markdown'
+Plugin 'tpope/vim-surround'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'fisadev/vim-isort'
-Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 
@@ -160,12 +175,18 @@ autocmd BufReadPost *
       \     endif |
       \ endif
 
+autocmd! BufRead,BufWritePost *.py call Flake8()
+
 
 """""""""""""""""""""""""KEY MAPPING""""""""""""""""""""
 
 " 映射切换buffer的键位
 nnoremap [b :bp<CR>
 nnoremap ]b :bn<CR>
+
+" 映射切换tabnew的键位
+nnoremap [t :tabp<CR>
+nnoremap ]t :tabn<CR>
 
 " normal模式下Ctrl+c全选并复杂到系统剪贴板，必须装有vim-gnome
 nmap <C-c> gg"+yG
@@ -189,21 +210,21 @@ nmap <silent> <F3> :NERDTreeToggle<CR>
 nmap <silent> <F4> :TagbarToggle<CR>
 
 " F5运行脚本
-autocmd BufRead,BufNewFile *.py nmap <F5> :!python %<CR>
+"autocmd BufRead,BufNewFile *.py noremap <F5> <leader>r<CR>
 
 " F6编译脚本
 autocmd BufRead,BufNewFile *.py set makeprg=python\ -c\ \"import\ py_compile,sys;\ sys.stderr=sys.stdout;\ py_compile.compile(r'%')\"
 autocmd BufRead,BufNewFile *.py set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
 autocmd BufRead,BufNewFile *.py nmap <F6> :make<CR>
 
-" <F7> 新建标签页
-map <F7> <Esc>:tabnew<CR>
+" <F7> 拷贝粘贴代码不破坏缩进
+set pastetoggle=<F7>
 
-" <F8> auto file pep8
-autocmd BufRead,BufNewFile *.py nmap <F8> :!autopep8 -i -a --ignore=W690,E501 %<CR>
+" <F8> for flake8 check
+autocmd FileType python map <buffer> <F8> :Isort<CR>:!yapf -i %<CR><CR>
 
-" <F9> auto all pep8
-nmap <F9> :!find . -type f -name "*.py" \| xargs autopep8 -i -a --ignore=W690,E501<CR>
+" <F10> 新建标签页
+map <F10> <Esc>:tabnew<CR>
 
 " 给当前单词添加引号
 nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
@@ -225,6 +246,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" emoji
+imap <C-e> <C-X><C-U>
+
 
 """"""""""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""""""""
 
@@ -236,18 +260,31 @@ let NERDTreeIgnore=['\.pyc$', '\~$']
 " 退出最后一个buff时也退出nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers = ['pylint', 'flake8']
-
 " CtrlP
-" 显示隐藏文件
 let g:ctrlp_show_hidden = 1
+
+" vim-indent-guides
+let g:indent_guides_guide_size = 1
+
+"Ctrl-X Ctrl-U emoji补全
+silent! if emoji#available()
+  let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
+  let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
+  let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
+  let g:gitgutter_sign_modified_removed = emoji#for('collision')
+endif
+set completefunc=emoji#complete
+
+" instant-markdown
+let g:instant_markdown_slow = 1
+
+" airline
+let g:airline_section_y = '%{strftime("%H:%M")}'
+
+" jedi
+autocmd FileType python setlocal completeopt-=preview
+let g:jedi#completions_command = "<C-n>"
+
+" flake8
+let g:flake8_show_in_file = 1
+let g:flake8_show_in_gutter = 1
