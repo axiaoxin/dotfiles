@@ -23,6 +23,7 @@ sudo pip install ipython virtualenvwrapper Pygments pythonpy unp simpletornadose
 #pip for vim
 sudo pip install isort, jedi, autopep8, flake8
 
+
 echo "=> install omyzsh"
 curl -L http://install.ohmyz.sh | sh
 
@@ -36,10 +37,10 @@ if [ -d ~/.pip ]; then
 fi
 ln -s `pwd`/.pip ~/.pip
 
-if [ -d ~/.vim ]; then
-    rm -rf ~/.vim
+if [ ! -d ~/.vim ]; then
+    mkdir ~/.vim
 fi
-ln -s `pwd`/.vim ~/.vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 if [ -f ~/.gitconfig ]; then
     rm -rf ~/.gitconfig
