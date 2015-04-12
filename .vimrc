@@ -219,8 +219,11 @@ autocmd BufRead,BufNewFile *.py nmap <F6> :make<CR>
 " <F7> 拷贝粘贴代码不破坏缩进
 set pastetoggle=<F7>
 
-" <F8> for flake8 check
+" <F8> sort import and auto pep8
 autocmd FileType python map <buffer> <F8> :Isort<CR>:!yapf -i %<CR><CR>
+
+" <F9> indent guides toggle
+map <F9> <ESC><Leader>ig
 
 " <F10> 新建标签页
 map <F10> <Esc>:tabnew<CR>
