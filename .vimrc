@@ -19,7 +19,6 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
-Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'axiaoxin/vim-json-line-format'
