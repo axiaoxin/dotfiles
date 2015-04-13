@@ -208,7 +208,11 @@ nmap <silent> <F3> :NERDTreeToggle<CR>
 nmap <silent> <F4> :TagbarToggle<CR>
 
 " F5运行脚本
-autocmd BufRead,BufNewFile *.py noremap <F5> :!python %<CR>
+if exists("$VIRTUAL_ENV")
+    autocmd BufRead,BufNewFile *.py noremap <F5> :!$VIRTUAL_ENV'/bin/python' %<CR>
+else
+    autocmd BufRead,BufNewFile *.py noremap <F5> :!python %<CR>
+endif
 
 " F6编译脚本
 autocmd BufRead,BufNewFile *.py set makeprg=python\ -c\ \"import\ py_compile,sys;\ sys.stderr=sys.stdout;\ py_compile.compile(r'%')\"
