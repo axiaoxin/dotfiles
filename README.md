@@ -7,4 +7,3 @@ My Mac OS X's dot files
 
 **TODO**
 
-run python scripts by F5 with virtualenv in vim
