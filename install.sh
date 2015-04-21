@@ -21,7 +21,7 @@ echo "=> install python modules"
 sudo easy_install pip &>/dev/null
 sudo pip install ipython virtualenvwrapper Pygments pythonpy unp simpletornadoserver &>/dev/null
 #pip for vim
-sudo pip install isort, jedi, yapf, flake8
+sudo pip install isort jedi yapf flake8
 
 
 echo "=> install omyzsh"
