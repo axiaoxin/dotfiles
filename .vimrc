@@ -139,7 +139,6 @@ set smarttab
 " 缩进
 set autoindent
 set smartindent
-autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,cla
 
 " 保存文件时自动删除行尾空格或Tab
 autocmd BufWritePre * :%s/\s\+$//e
