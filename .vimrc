@@ -189,9 +189,6 @@ nmap <C-c> gg"+yG
 " visual模式下Ctrl+c复制选中内容到剪贴板
 vmap <C-c> "+y
 
-" insert下CTRL-v原样粘贴剪切板内容
-imap <C-v> <Esc>"+p
-
 " w!!写入只读文件
 cmap w!! w !sudo tee >/dev/null %
 
@@ -222,11 +219,8 @@ set pastetoggle=<F7>
 " <F8> sort import and auto pep8
 autocmd FileType python map <buffer> <F8> :!yapf -i %;isort %;<CR><CR>
 
-" <F9> indent guides toggle
-map <F9> <ESC><Leader>ig
-
-" <F10> 新建标签页
-map <F10> <Esc>:tabnew<CR>
+" <F9> 新建标签页
+map <F9> <Esc>:tabnew<CR>
 
 " 给当前单词添加引号
 nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
