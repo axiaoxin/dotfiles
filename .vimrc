@@ -110,8 +110,9 @@ set guifont=Menlo:h14
 set lines=24 columns=80
 
 " 设置配色
-colorscheme elflord
-set background=dark
+" 跟谁终端配色，终端采用tomorrow-night-bright
+"colorscheme elflord
+"set background=dark
 
 " 在状态栏显示正在输入的命令
 set showcmd
