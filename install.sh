@@ -19,7 +19,7 @@ sudo npm -g install instant-markdown-d
 
 echo "=> install python modules"
 sudo easy_install pip &>/dev/null
-sudo pip install ipython virtualenvwrapper Pygments pythonpy unp simpletornadoserver &>/dev/null
+sudo pip install ipython pipreqs virtualenvwrapper Pygments pythonpy unp simpletornadoserver &>/dev/null
 #pip for vim
 sudo pip install isort jedi yapf flake8
 
