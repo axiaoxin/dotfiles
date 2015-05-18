@@ -11,7 +11,7 @@ sudo gem update --system &>/dev/null
 
 echo "=> install bins"
 brew install vim --with-lua
-brew install git htop npm unrar tree ssh-copy-id wget coreutils ffmpeg figlet gist ctags &>/dev/null
+brew install git htop npm unrar tree ssh-copy-id wget coreutils ffmpeg figlet gist ctags cheat &>/dev/null
 sudo gem install lolcat &>/dev/null
 sudo npm install -g bower &>/dev/null
 #npm for vim
