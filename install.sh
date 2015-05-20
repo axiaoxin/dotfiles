@@ -32,11 +32,6 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 
 echo "=> make softlinks"
 
-if [ -d ~/.pip ]; then
-    rm -rf ~/.pip
-fi
-ln -s `pwd`/.pip ~/.pip
-
 if [ ! -d ~/.vim ]; then
     mkdir ~/.vim
 fi
