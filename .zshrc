@@ -25,8 +25,8 @@ alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true &&
 alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias pyserver="python -m SimpleTornadoServer"
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
-alias python='ptpython'
-alias ipython='ptipython'
+alias python='ptpython --vi'
+alias ipython='ptipython --vi'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
