@@ -56,3 +56,8 @@ if [ -f ~/.zshrc ]; then
     rm -rf ~/.zshrc
 fi
 ln -s `pwd`/.zshrc ~/.zshrc
+
+if [ ! -d ~/.config ]; then
+    mkdir ~/.config
+fi
+ln -s `pwd`/flake8 ~/.config
