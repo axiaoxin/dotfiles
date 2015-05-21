@@ -247,6 +247,8 @@ imap <C-e> <C-X><C-U>
 
 
 """"""""""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""""""""
+" NerdCommenter
+let g:NERDSpaceDelims=1
 
 " NERDTREE
 " 不显示的文件
