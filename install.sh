@@ -19,6 +19,7 @@ sudo gem install lolcat &>/dev/null
 sudo npm install -g bower &>/dev/null
 #npm for vim
 sudo npm -g install instant-markdown-d
+sudo npm install -g jshint
 
 echo "=> install python modules"
 sudo easy_install pip &>/dev/null
