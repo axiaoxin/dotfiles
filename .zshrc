@@ -109,3 +109,6 @@ fortune | $say_or_think -f $cowfile $eye | lolcat -a -s 150 -p 1.5 -F 1 -d 10 -f
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+###nvm
+source ~/.nvm/nvm.sh

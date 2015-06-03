@@ -5,6 +5,9 @@ sudo chown -R `whoami` /usr/local
 echo "=> install homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" &>/dev/null
 
+echo "=> install nvm"
+curl https://raw.githubusercontent.com/cnpm/nvm/master/install.sh | bash &>/dev/null
+
 echo "=> homebrew update"
 brew update &>/dev/null
 sudo gem update --system &>/dev/null
