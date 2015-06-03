@@ -22,9 +22,9 @@ sudo npm -g install instant-markdown-d
 
 echo "=> install python modules"
 sudo easy_install pip &>/dev/null
-sudo pip install ptpython ipython pipreqs virtualenvwrapper Pygments pythonpy unp simpletornadoserver thefuck &>/dev/null
+sudo pip install -U ptpython ipython pipreqs virtualenvwrapper Pygments pythonpy unp simpletornadoserver thefuck &>/dev/null
 #pip for vim
-sudo pip install isort jedi yapf flake8
+sudo pip install -U isort jedi yapf flake8
 
 
 echo "=> install omyzsh"
