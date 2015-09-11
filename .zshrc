@@ -30,7 +30,7 @@ alias ipython='ptipython --vi'
 alias ttyserver='rm /tmp/outfile.tty &>/dev/null;rm /tmp/ttycast &>/dev/null;ttyreccast /tmp/outfile.tty'
 alias ttyclient='reset && ttyrec /tmp/ttycast'
 alias ttyclear='rm /tmp/outfile.tty;rm /tmp/ttycast'
-alias ttyopen='open http://localhost:13377'
+alias ttyopen='open http://`ipconfig getifaddr en0`:13377'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
