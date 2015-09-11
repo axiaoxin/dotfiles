@@ -17,6 +17,7 @@ brew install vim --with-lua
 brew install git htop npm unrar tree ssh-copy-id wget coreutils ffmpeg figlet gist ctags cheat &>/dev/null
 sudo gem install lolcat &>/dev/null
 sudo npm install -g bower &>/dev/null
+sudo npm install -g ttyrec ttycast &>/dev/null
 #npm for vim
 sudo npm -g install instant-markdown-d
 sudo npm install -g jshint
