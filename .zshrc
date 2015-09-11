@@ -27,9 +27,10 @@ alias pyserver="python -m SimpleTornadoServer"
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias ptpython='ptpython --vi'
 alias ipython='ptipython --vi'
-alias ttyserver='rm outfile.tty &>/dev/null;rm /tmp/ttycast &>/dev/null;ttyreccast outfile.tty'
-alias ttyserver_clear='rm outfile.tty;rm /tmp/ttycast'
-alias ttyclient='reset && ttyrec /tmp/ttycast;open http://localhost:13377'
+alias ttyserver='rm /tmp/outfile.tty &>/dev/null;rm /tmp/ttycast &>/dev/null;ttyreccast /tmp/outfile.tty'
+alias ttyclient='reset && ttyrec /tmp/ttycast'
+alias ttyclear='rm /tmp/outfile.tty;rm /tmp/ttycast'
+alias ttyopen='open http://localhost:13377'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
