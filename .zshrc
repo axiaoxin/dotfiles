@@ -33,6 +33,7 @@ alias ttyserver='rm /tmp/outfile.tty &>/dev/null;rm /tmp/ttycast &>/dev/null;tty
 alias ttyclient='reset && ttyrec /tmp/ttycast'
 alias ttyclear='rm /tmp/outfile.tty;rm /tmp/ttycast'
 alias ttyopen='open http://`ipconfig getifaddr en0`:13377'
+alias ttycopy='echo "http://`ipconfig getifaddr en0`:13377" | pbcopy'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
