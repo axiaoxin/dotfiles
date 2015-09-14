@@ -24,6 +24,7 @@ alias hidedotfiles="defaults write com.apple.finder AppleShowAllFiles -bool fals
 alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias pyserver="python -m SimpleTornadoServer"
+alias ftpserver="sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist"
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias ptpython='ptpython --vi'
 alias ipython='ptipython --vi'
