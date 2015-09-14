@@ -5,5 +5,10 @@ My Mac OS X's dot files
 
     . ./install.sh
 
-**TODO**
+recommending apps:
 
+- iterm 2 <https://iterm2.com>
+- alfred 2 <https://www.alfredapp.com>
+- MesaSQLite <http://mesasqlite.en.softonic.com/mac>
+- ClipMenu <http://www.clipmenu.com>
+- spectacle <https://www.spectacleapp.com>
