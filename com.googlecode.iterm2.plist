@@ -781,9 +781,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>-747 37 445 77 -1920 0 1920 1057 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>196 292 924 485 0 0 1280 777 </string>
+	<string>-1372 572 924 485 -1920 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>270 4 1010 601 0 0 1280 777 </string>
+	<string>-1920 0 1920 1080 -1920 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>152 304 570 473 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
@@ -1353,7 +1353,7 @@
 			<key>Normal Font</key>
 			<string>CPMono_v07Plain 16</string>
 			<key>Option Key Sends</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -1526,6 +1526,10 @@
 			<string>/Users/ashin</string>
 		</dict>
 	</array>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>454836078.50789702</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>464167830.87613499</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1588,11 +1592,9 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-04-21T14:36:18Z</date>
+	<date>2015-09-18T04:38:04Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
-	<key>SUSkippedVersion</key>
-	<string>2.0.0.20141103</string>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1638,6 +1640,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.0</string>
+	<string>2.1.1</string>
 </dict>
 </plist>
