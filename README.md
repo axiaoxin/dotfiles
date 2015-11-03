@@ -12,3 +12,4 @@ recommending apps:
 - MesaSQLite <http://mesasqlite.en.softonic.com/mac>
 - ClipMenu <http://www.clipmenu.com>
 - spectacle <https://www.spectacleapp.com>
+- Aerial <https://github.com/JohnCoates/Aerial>
