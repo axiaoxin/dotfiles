@@ -15,7 +15,7 @@ sudo gem update --system &>/dev/null
 echo "=> install bins"
 brew install caskroom/cask/brew-cask
 brew install vim --with-lua
-brew install git htop npm unrar tree ssh-copy-id wget coreutils ffmpeg figlet gist ctags cheat the_silver_searcher &>/dev/null
+brew install git git-flow htop npm unrar tree ssh-copy-id wget coreutils ffmpeg figlet gist ctags cheat the_silver_searcher &>/dev/null
 brew cask install mojibar &>/dev/null
 sudo gem install lolcat &>/dev/null
 sudo npm install -g bower &>/dev/null
