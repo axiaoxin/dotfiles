@@ -13,3 +13,4 @@ recommending apps:
 - ClipMenu <http://www.clipmenu.com>
 - spectacle <https://www.spectacleapp.com>
 - Aerial <https://github.com/JohnCoates/Aerial>
+- wikiwand <http://www.wikiwand.com>
