@@ -13,4 +13,5 @@ recommending apps:
 - ClipMenu <http://www.clipmenu.com>
 - spectacle <https://www.spectacleapp.com>
 - Aerial <https://github.com/JohnCoates/Aerial>
-- wikiwand <http://www.wikiwand.com>
+- wikiwand(safari plugin) <http://www.wikiwand.com>
+- octotree(safari plugin) <https://github.com/buunguyen/octotree/blob/master/dist/safari.safariextz>
