@@ -14,4 +14,4 @@ recommending apps:
 - spectacle <https://www.spectacleapp.com>
 - Aerial <https://github.com/JohnCoates/Aerial>
 - wikiwand(safari plugin) <http://www.wikiwand.com>
-- octotree(safari plugin) <https://github.com/buunguyen/octotree/blob/master/dist/safari.safariextz>
+- licecap(gif screenshot) <http://www.cockos.com/licecap/>
