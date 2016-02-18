@@ -15,3 +15,4 @@ recommending apps:
 - Aerial <https://github.com/JohnCoates/Aerial>
 - wikiwand(safari plugin) <http://www.wikiwand.com>
 - licecap(gif screenshot) <http://www.cockos.com/licecap/>
+- MPlayerX <http://mplayerx.org/index.html>
