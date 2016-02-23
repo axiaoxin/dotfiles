@@ -20,6 +20,7 @@ brew cask install mojibar &>/dev/null
 sudo gem install lolcat &>/dev/null
 sudo npm install -g bower &>/dev/null
 sudo npm install -g ttyrec ttycast &>/dev/null
+sudo npm install -g how2 &>/dev/null
 #npm for vim
 sudo npm -g install instant-markdown-d
 sudo npm install -g jshint
