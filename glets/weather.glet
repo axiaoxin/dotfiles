@@ -116,7 +116,7 @@
 	<key>Name</key>
 	<string>wttr.in</string>
 	<key>RefreshInterval</key>
-	<integer>1800</integer>
+	<integer>900</integer>
 	<key>RightToLeft</key>
 	<false/>
 	<key>SetLocale</key>
