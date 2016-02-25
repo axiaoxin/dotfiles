@@ -37,6 +37,8 @@ alias ttycopy='echo "http://`ipconfig getifaddr en0`:13377" | pbcopy'
 alias video2gif='function _video2gif() {ffmpeg -i $1 -pix_fmt rgb24 -f gif - | gifsicle > $2;}; _video2gif'
 # ffmpeg -i input.mp4 -s 600x400 -pix_fmt rgb24 -f gif - | gifsicle --optimize=3 > output.gif
 alias tq='function tianqi() {curl wttr.in/$1}; tianqi'
+# curl -s wttr.in/shanghai  | grep "Weather for" -A 6 | sed -E "s/"$'\E'"\[([0-9]{1,3}((;[0-9]{1,3})*)?)?[m|K]//g"
+alias cal='cal | grep --color -EC6 "\b$(date +%e | sed "s/ //g")"'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

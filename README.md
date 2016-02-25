@@ -16,3 +16,4 @@ recommending apps:
 - wikiwand(safari plugin) <http://www.wikiwand.com>
 - licecap(gif screenshot) <http://www.cockos.com/licecap/>
 - MPlayerX <http://mplayerx.org/index.html>
+- GeekTool <http://projects.tynsoe.org/en/geektool/download.php> <http://www.macosxtips.co.uk/geeklets/>
