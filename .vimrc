@@ -349,8 +349,3 @@ let g:clojure_syntax_keywords = {
 
 " vim-clojure-highlight
 autocmd BufRead *.clj try | silent! Require | catch /^Fireplace/ | endtry
-
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
