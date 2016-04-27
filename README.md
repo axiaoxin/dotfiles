@@ -17,3 +17,4 @@ recommending apps:
 - licecap(gif screenshot) <http://www.cockos.com/licecap/>
 - MPlayerX <http://mplayerx.org/index.html>
 - GeekTool <http://projects.tynsoe.org/en/geektool/download.php> <http://www.macosxtips.co.uk/geeklets/>
+- XtraFinder <http://www.trankynam.com/xtrafinder/>
