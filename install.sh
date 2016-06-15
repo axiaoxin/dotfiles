@@ -26,6 +26,7 @@ sudo npm install -g jshint
 
 echo "=> install python modules"
 sudo easy_install pip &>/dev/null
+pip install --upgrade setuptools &>/dev/null
 sudo pip install -U ptpython ipython virtualenvwrapper Pygments pythonpy unp simpletornadoserver thefuck joe polysh&>/dev/null
 #pip for vim
 sudo pip install -U isort jedi yapf flake8 autopep8
