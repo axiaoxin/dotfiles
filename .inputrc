@@ -2,3 +2,8 @@
 "\e[B": history-search-forward
 set show-all-if-ambiguous on
 set completion-ignore-case on
+
+set meta-flag on
+set convert-meta off
+set input-meta on
+set output-meta on
