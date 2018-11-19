@@ -116,19 +116,19 @@
     st = status -sb
     ci = commit
     co = checkout
-        graph = log --graph --oneline --decorate=short --branches='*'
+    graph = log --graph --oneline --decorate=short --branches='*'
     br = branch
     df = diff --color-words='[^[:space:]]'
     sh = show --color-words='[^[:space:]]'
     lg = log -p
-        serve = !git daemon --reuseaddr --verbose --base-path=. --export-all ./.git
-        pend = cherry -v origin/master
+    serve = !git daemon --reuseaddr --verbose --base-path=. --export-all ./.git
+    pend = cherry -v origin/master
 #   prefab = cherry -v origin/fabrication
 [format]
-        pretty = '%C(yellow)%h%Creset %C(magenta)%cd%Creset %d %s'
+    pretty = %C(yellow)%h%Creset %C(magenta)%cd%Creset %d %s
 [user]
-	name = axiaoxin
-	email = 254606826@qq.com
+    name = axiaoxin
+    email = 254606826@qq.com
 
 [github]
 #   user =
