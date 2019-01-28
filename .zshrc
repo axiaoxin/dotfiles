@@ -127,5 +127,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 source ~/.nvm/nvm.sh
 
 # go环境
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$(go env GOPATH)/bin
+export GOROOT=$(go env GOROOT)  # default: /usr/local/go
+export GOPATH=$(go env GOPATH)  # default: $HOMR/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin  # add bin path
