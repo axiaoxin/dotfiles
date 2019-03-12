@@ -128,4 +128,5 @@ source ~/.nvm/nvm.sh
 
 # go环境
 export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$(go env GOPATH)/bin
+export GOPATH=~/go
+export PATH=$PATH:$GOPATH/bin
