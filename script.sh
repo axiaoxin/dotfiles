@@ -31,7 +31,7 @@ brew install redis
 #install mysql
 brew install mycli
 brew cask install switchhosts
-brew install cmake macvim pygments
+brew install cmake macvim pygments global
 # .zhsrc
 # download app, fonts
 # install go
