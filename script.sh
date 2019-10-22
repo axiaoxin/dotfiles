@@ -24,7 +24,7 @@ brew install pyenv
 sudo easy_install pip
 sudo pip install --upgrade setuptools
 brew install lolcat
-sudo pip install virtualenv virtualenvwrapper thefuck isort yapf
+sudo pip install virtualenv virtualenvwrapper thefuck isort yapf pylint flake8 autopep8
 brew install gshuf
 brew install coreutils
 brew install redis
