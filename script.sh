@@ -16,6 +16,23 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 chflags nohidden ~/Library
 defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder ShowStatusBar -bool true
-
+#install xcode and run install components
+brew install fortune
+brew install cowsay
+brew install pyenv
+# set global python 3
+sudo easy_install pip
+sudo pip install --upgrade setuptools
+brew install lolcat
+sudo pip install virtualenv virtualenvwrapper thefuck isort yapf
+brew install gshuf
+brew install coreutils
+brew install redis
+#install mysql
+brew install mycli
+brew cask install switchhosts
+brew install cmake macvim pygments
 # .zhsrc
-# download app
+# download app, fonts
+# install go
+# install iterm2
