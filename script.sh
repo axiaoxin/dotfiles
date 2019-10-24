@@ -36,3 +36,4 @@ brew install cmake macvim pygments global
 # download app, fonts
 # install go
 # install iterm2
+gem install iStats
