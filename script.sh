@@ -37,5 +37,7 @@ brew install cmake macvim pygments global
 # install go
 # install iterm2
 gem install iStats
+
+brew unlink ctags
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
