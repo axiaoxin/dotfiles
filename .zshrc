@@ -121,7 +121,7 @@ say_or_think=`echo $say_or_think[(($RANDOM % ${#say_or_think[@]}))+1]`
 eyes=(-b -d -y)
 eye=`echo $eyes[(($RANDOM % ${#eyes[@]}))+1]`
 cowfile=`cowsay -l| sed '1d;' | tr ' ' '\n'| gshuf -n 1`
-fortune | $say_or_think -f $cowfile $eye | lolcat -a -s 150 -p 1.5 -F 1 -d 10 -f;
+fortune | $say_or_think -f $cowfile $eye | lolcat# -a -s 150 -p 1.5 -F 1 -d 10 -f;
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
