@@ -5,7 +5,10 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="juanghurtado"
+ZSH_THEME="random"
+
+ZSH_THEME_RANDOM_CANDIDATES=( "3den" "Soliah" "af-magic" "afowler" "alanpeabody" "aussiegeek" "bira" "blinks" "candy" "crcandy" "crunch" "dpoggi" "dst" "dstufft" "eastwood" "flazz" "fox" "frisk" "frontcube" "gallois" "gentoo" "gnzh" "itchy" "jaischeema" "jispwoso" "josh" "juanghurtado" "lambda" "macovsky" "mh" "mira" "mortalscumbag" "murilasso" "muse" "pmcgee" "pygmalion-virtualenv" "pygmalion" "re5et" "rkj-repos" "simple" "steeef" "tjkirch" "tjkirch_mod" "tonotdo" "xiong-chiamiov-plus" "ys")
+
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
