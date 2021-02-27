@@ -1,6 +1,6 @@
 {
   "Thin Strokes" : 4,
-  "Working Directory" : "\/Users\/ashin",
+  "Working Directory" : "\/Users\/axiaoxin",
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
     "Green Component" : 0.91671288013458252,
@@ -318,7 +318,7 @@
   "Cursor Type" : 2,
   "AWDS Pane Directory" : "",
   "Blur" : false,
-  "Normal Font" : "KoseFontSC 18",
+  "Normal Font" : "XiaolaiMonoSC 18",
   "Vertical Spacing" : 1,
   "Ansi 7 Color" : {
     "Green Component" : 0.99997437000274658,
@@ -361,14 +361,14 @@
     "Blue Component" : 0.84705882349999995
   },
   "Use Tab Color" : false,
-  "Columns" : 85,
+  "Columns" : 100,
   "Unicode Normalization" : 0,
   "Visual Bell" : true,
-  "ASCII Ligatures" : true,
+  "Custom Directory" : "No",
   "Ansi 5 Color" : {
     "Green Component" : 0.59215686274509804,
     "Red Component" : 0.76470588235294112,
     "Blue Component" : 0.84705882352941175
   },
-  "Custom Directory" : "No"
+  "ASCII Ligatures" : true
 }
