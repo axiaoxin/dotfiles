@@ -72,7 +72,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history-substring-search virtualenvwrapper last-working-dir)
+plugins=(git history-substring-search last-working-dir)
 
 source $ZSH/oh-my-zsh.sh
 
