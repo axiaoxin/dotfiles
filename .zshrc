@@ -16,7 +16,52 @@ ZSH_THEME="random"
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-ZSH_THEME_RANDOM_CANDIDATES=( "3den" "Soliah" "af-magic" "afowler" "alanpeabody" "aussiegeek" "bira" "blinks" "candy" "crcandy" "crunch" "dpoggi" "dst" "dstufft" "eastwood" "flazz" "fox" "frisk" "frontcube" "gallois" "gentoo" "gnzh" "itchy" "josh" "juanghurtado" "lambda" "macovsky" "mh" "mira" "mortalscumbag" "murilasso" "muse" "pmcgee" "pygmalion-virtualenv" "pygmalion" "re5et" "rkj-repos" "simple" "steeef" "tjkirch" "tjkirch_mod" "tonotdo" "xiong-chiamiov-plus" "ys")
+ZSH_THEME_RANDOM_CANDIDATES=(
+    "3den"
+    "Soliah"
+    "af-magic"
+    "afowler"
+    "alanpeabody"
+    "aussiegeek"
+    "bira"
+    "blinks"
+    "candy"
+    "crcandy"
+    "crunch"
+    "dpoggi"
+    "dst"
+    "dstufft"
+    "eastwood"
+    "flazz"
+    "fox"
+    "frisk"
+    "frontcube"
+    "gallois"
+    "gentoo"
+    "gnzh"
+    "itchy"
+    "josh"
+    "juanghurtado"
+    "lambda"
+    "macovsky"
+    "mh"
+    "mira"
+    "mortalscumbag"
+    "murilasso"
+    "muse"
+    "pmcgee"
+    "pygmalion-virtualenv"
+    "pygmalion"
+    "re5et"
+    "rkj-repos"
+    "simple"
+    "steeef"
+    "tjkirch"
+    "tjkirch_mod"
+    "tonotdo"
+    "xiong-chiamiov-plus"
+    "ys"
+)
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -72,7 +117,20 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history-substring-search last-working-dir)
+plugins=(
+    cp  # 提供一个 cpv 命令，这个命令使用 rsync 实现带进度条的复制功能。
+    extract  # 提供一个 extract 命令，以及它的别名 x。功能是：一！键！解！压！
+    git  # 定义了有关 git 的 alias。常用的有gaa = git add --all; gcmsg = git commit -m; ga = git add; gst = git status; gp = git push
+    gitignore  # 提供一条 gi 命令，用来查询 gitignore 模板。比如你新建了一个 python 项目，就可以用: gi python > .gitignore
+    git-open  # 提供一个 git-open 命令，在浏览器中打开当前所在 git 项目的远程仓库地址。
+    history-substring-search  # 历史查找
+    last-working-dir
+    safe-paste  # 当你往 zsh 粘贴脚本时，它不会被立刻运行。
+    colored-man-pages  # 带颜色的 man 命令
+    zsh-syntax-highlighting  # 命令高亮
+    zsh-autosuggestions  # 自动补全
+    sudo  # 按两次esc在前面添加sudo
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -123,3 +181,16 @@ export GOPROXY=https://goproxy.cn,direct
 # gvm
 [[ -s "/Users/axiaoxin/.gvm/scripts/gvm" ]] && source "/Users/axiaoxin/.gvm/scripts/gvm"
 # gvm end
+
+# the fuck
+eval $(thefuck --alias)
+# the fuck end
+
+# cowsay at last
+say_or_think=(cowsay cowthink)
+say_or_think=`echo $say_or_think[(($RANDOM % ${#say_or_think[@]}))+1]`
+eyes=(-b -d -y)
+eye=`echo $eyes[(($RANDOM % ${#eyes[@]}))+1]`
+cowfile=`cowsay -l| sed '1d;' | tr ' ' '\n'| gshuf -n 1`
+fortune | $say_or_think -f $cowfile $eye | lolcat # -a -s 150 -p 1.5 -F 1 -d 10 -f;
+# cowsay end
