@@ -102,3 +102,24 @@ export LANG=zh_CN.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# HomeBrew
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+export PATH="/usr/local/bin/brew:$PATH"
+# HomeBrew END
+
+
+# trash
+alias rm="trash"
+# trash end
+
+# golang
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=~/go
+export PATH=$PATH:$GOPATH/bin
+export GOPROXY=https://goproxy.cn,direct
+# golang end
+
+# gvm
+[[ -s "/Users/axiaoxin/.gvm/scripts/gvm" ]] && source "/Users/axiaoxin/.gvm/scripts/gvm"
+# gvm end
