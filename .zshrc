@@ -179,7 +179,7 @@ export GOPROXY=https://goproxy.cn,direct
 # golang end
 
 # gvm
-[[ -s "/Users/axiaoxin/.gvm/scripts/gvm" ]] && source "/Users/axiaoxin/.gvm/scripts/gvm"
+[[ -s "~/.gvm/scripts/gvm" ]] && source "~/.gvm/scripts/gvm"
 # gvm end
 
 # the fuck
