@@ -168,3 +168,11 @@
 #       exit 1 if b.include?(%(<)*7)'"
 [push]
     default = simple
+
+[gitflow "prefix"]
+    feature = feature/
+    bugfix = bugfix/
+    release = release/
+    hotfix = hotfix/
+    support = support/
+    versiontag = v
