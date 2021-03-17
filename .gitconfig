@@ -176,3 +176,6 @@
     hotfix = hotfix/
     support = support/
     versiontag = v
+
+[url "git@code.hellotalk.com:"]
+    insteadOf = https://code.hellotalk.com/
