@@ -125,7 +125,7 @@
     pend = cherry -v origin/master
 #   prefab = cherry -v origin/fabrication
 [format]
-    pretty = %C(yellow)%h%Creset %C(magenta)%cd%Creset %d %an %s
+    #pretty = %C(yellow)%h%Creset %C(magenta)%cd%Creset %d %an %s
 [user]
     name = axiaoxin
     email = 254606826@qq.com
