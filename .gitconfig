@@ -135,37 +135,12 @@
 [gitjour]
 #   prefix =
 
-#For merge conflict resolution: https://gist.github.com/643979
-#
-# ===> .git/info/attributes  (or ~/.gitattributes)
-# Gemfile.lock merge=bundleinstall
-# db/schema.rb merge=railsschema
-#
-# ===> .git/config           (or ~/.gitconfig)
-# [merge "bundleinstall"]
-#   name = bundle install
-#   driver = bundle install
-# [merge "railsschema"]
-#   name = newer Rails schema version
-#   driver = "ruby -e '\n\
-#       system %(git), %(merge-file), %(--marker-size=%L), %(%A), %(%O), %(%B)\n\
-#       b = File.read(%(%A))\n\
-#       b.sub!(/^<+ .*\\nActiveRecord::Schema\\.define.:version => (\\d+). do\\n=+\\nActiveRecord::Schema\\.define.:version => (\\d+). do\\n>+ .*/) do\n\
-#         %(ActiveRecord::Schema.define(:version => #{[$1, $2].max}) do)\n\
-#       end\n\
-#       File.open(%(%A), %(w)) {|f| f.write(b)}\n\
-#       exit 1 if b.include?(%(<)*%L)'"
-#== but the %L (set to 7) and the --marker-size option seem to not work. This looks for <<<<<<< ('<'*7)
-# [merge "railsschema"]
-#   name = newer Rails schema version
-#   driver = "ruby -e '\n\
-#       system %(git), %(merge-file), %(%A), %(%O), %(%B)\n\
-#       b = File.read(%(%A))\n\
-#       b.sub!(/^<+ .*\\nActiveRecord::Schema\\.define.:version => (\\d+). do\\n=+\\nActiveRecord::Schema\\.define.:version => (\\d+). do\\n>+ .*/) do\n\
-#         %(ActiveRecord::Schema.define(:version => #{[$1, $2].max}) do)\n\
-#       end\n\
-#       File.open(%(%A), %(w)) {|f| f.write(b)}\n\
-#       exit 1 if b.include?(%(<)*7)'"
+[merge]
+    tool = meld
+    conflictstyle = diff3
+[mergetool "meld"]
+    cmd = meld $LOCAL $BASE $REMOTE --output=$MERGED --auto-merge
+
 [push]
     default = simple
 
