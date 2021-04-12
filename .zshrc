@@ -169,7 +169,12 @@ export PATH="/usr/local/bin/brew:$PATH"
 
 # trash
 alias rm="trash"
-# trash end
+# trash END
+
+# lsd
+alias ls="lsd"
+alias ll="lsd -lh"
+# lsd END
 
 # golang
 export PATH=$PATH:/usr/local/go/bin
@@ -177,15 +182,15 @@ export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 export GOPROXY=https://goproxy.cn,direct
 export GOPRIVATE=
-# golang end
+# golang END
 
 # gvm
 [[ -s "~/.gvm/scripts/gvm" ]] && source "~/.gvm/scripts/gvm"
-# gvm end
+# gvm END
 
 # the fuck
 eval $(thefuck --alias)
-# the fuck end
+# the fuck END
 
 # cowsay at last
 say_or_think=(cowsay cowthink)
@@ -194,4 +199,4 @@ eyes=(-b -d -y)
 eye=`echo $eyes[(($RANDOM % ${#eyes[@]}))+1]`
 cowfile=`cowsay -l| sed '1d;' | tr ' ' '\n'| gshuf -n 1`
 fortune | $say_or_think -f $cowfile $eye | lolcat # -a -s 150 -p 1.5 -F 1 -d 10 -f;
-# cowsay end
+# cowsay END
