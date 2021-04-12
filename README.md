@@ -1,20 +1,21 @@
-My Mac OS X's dot files
-=======================
+# My Mac OS X's dot files
 
-**Usage**
+- .gitconfig
 
-    . ./install.sh
+> git 配置文件
 
-recommending apps:
+- .zshrc
 
-- iterm 2 <https://iterm2.com>
-- alfred 2 <https://www.alfredapp.com>
-- MesaSQLite <http://mesasqlite.en.softonic.com/mac>
-- ClipMenu <http://www.clipmenu.com>
-- spectacle <https://www.spectacleapp.com>
-- Aerial <https://github.com/JohnCoates/Aerial>
-- wikiwand(safari plugin) <http://www.wikiwand.com>
-- licecap(gif screenshot) <http://www.cockos.com/licecap/>
-- MPlayerX <http://mplayerx.org/index.html>
-- GeekTool <http://projects.tynsoe.org/en/geektool/download.php> <http://www.macosxtips.co.uk/geeklets/>
-- XtraFinder <http://www.trankynam.com/xtrafinder/>
+> zsh 配置文件
+
+- iTerm2 字体
+
+> Profiles > Text > Font
+>
+> JetBrains Mono Medium Nerd Font Complete.ttf
+
+- iTerm2 配色:
+
+> Tomorrow Night Bright.itermcolors
+>
+> Profiles > Colors > Color Presets...
