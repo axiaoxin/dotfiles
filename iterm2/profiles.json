@@ -11,7 +11,7 @@
     "Blue Component" : 0.91648769378662109,
     "Red Component" : 0.91654461622238159
   },
-  "Rows" : 30,
+  "Rows" : 31,
   "Ansi 11 Color" : {
     "Green Component" : 0.7725490196,
     "Blue Component" : 0.2784313725,
@@ -365,7 +365,7 @@
     "Red Component" : 0.76470588240000004
   },
   "Use Tab Color" : false,
-  "Columns" : 100,
+  "Columns" : 92,
   "Unicode Normalization" : 0,
   "Visual Bell" : true,
   "Custom Directory" : "No",
