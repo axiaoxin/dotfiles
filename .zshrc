@@ -89,7 +89,7 @@ HYPHEN_INSENSITIVE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
@@ -167,14 +167,14 @@ export PATH="/usr/local/bin/brew:$PATH"
 # HomeBrew END
 
 
-# trash
+# Alias
 alias rm="trash"
-# trash END
-
-# lsd
 alias ls="lsd"
 alias ll="lsd -lh"
-# lsd END
+alias cat="bat"
+alias df="duf"
+alias tree="broot"
+
 
 # golang
 export PATH=$PATH:/usr/local/go/bin
